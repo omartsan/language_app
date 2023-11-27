@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="beibei.context_bei">
+    <ContentPage.Content>
+
+            <StackLayout>
+        <Frame BackgroundColor="#454245" Padding="24" CornerRadius="0">
+            <Label Text=""  x:Name="key" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+
+         <Label x:Name="ind" Text="num" HorizontalTextAlignment="Right" FontSize="10" />
+
+        <Editor x:Name="pinyin" Placeholder="Pinyin" AutoSize="TextChanges"  />
+
+        <Editor x:Name="phrase" Placeholder="Phrase" AutoSize="TextChanges" FontSize="Title"  />
+
+        <Editor x:Name="answer" Placeholder="Answer" AutoSize="TextChanges" FontSize="Title" />
+
+
+
+                <Button Text="Next"
+                x:Name="next"
+                HorizontalOptions="Start"
+                Padding="10,30,0,0"
+                Clicked="nextClicked" />
+
+                 <Button Text="Check"
+                x:Name="check"
+                HorizontalOptions="Start"
+                Padding="10,30,0,0"
+                Clicked="checkClicked" />
+
+                <Button Text="Back"
+                x:Name="context"
+                HorizontalOptions="Start"
+                Padding="10,30,0,0"
+                Clicked="contextClicked" />
+    </StackLayout>
+        
+    </ContentPage.Content>
+</ContentPage>

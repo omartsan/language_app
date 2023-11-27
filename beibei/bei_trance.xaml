@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="beibei.bei_trance">
+
+    <StackLayout>
+        <Frame BackgroundColor="#AF1212" Padding="20" CornerRadius="0" HeightRequest="-1" Margin="0">
+            <Label Text="BeiTrance" HorizontalTextAlignment="Start" TextColor="White" FontSize="25"
+             VerticalTextAlignment="End" VerticalOptions="End" FontFamily="Biome"/>
+
+
+            
+        </Frame>
+
+         <Label x:Name="ind_trance" Text="num" HorizontalTextAlignment="Right" FontSize="10" />
+
+        <Editor x:Name="pinyin_trance" Placeholder="Pinyin" AutoSize="TextChanges"  />
+
+        <Editor x:Name="phrase_trance" Placeholder="Phrase" AutoSize="TextChanges" FontSize="Title"  />
+
+        <Editor x:Name="phrase2_trance" Placeholder="Phrase2" AutoSize="TextChanges" FontSize="Title" />
+
+
+        <Editor x:Name="answer_trance" Placeholder="answer" AutoSize="TextChanges"  />
+
+
+
+                <Button Text="Next"
+                x:Name="next"
+                HorizontalOptions="Start"
+                Padding="10,30,0,0"
+                Clicked="nextTrance" />
+
+
+                 <Button Text="Check"
+                x:Name="check"
+                HorizontalOptions="Start"
+                Padding="10,30,0,0"
+                Clicked="checkTrance" />
+
+
+
+              <Button Text="Back"
+                x:Name="lt"
+                HorizontalOptions="Start"
+                Padding="10,30,20,20"
+                Clicked="ltgo" />
+
+
+    </StackLayout>
+
+
+</ContentPage>

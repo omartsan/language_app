@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="beibei.Bei">
+
+    <StackLayout>
+        <Frame BackgroundColor="#AF1212" Padding="20" CornerRadius="0" HeightRequest="-1" Margin="0">
+            <Label Text="BeiBei" HorizontalTextAlignment="Start" TextColor="White" FontSize="25"
+             VerticalTextAlignment="End" VerticalOptions="End" FontFamily="Biome"/>
+
+
+            
+        </Frame>
+
+         <Label x:Name="ind" Text="num" HorizontalTextAlignment="Right" FontSize="10" />
+
+        <Editor x:Name="pinyin" Placeholder="Pinyin" AutoSize="TextChanges"  />
+
+        <Editor x:Name="phrase" Placeholder="Phrase" AutoSize="TextChanges" FontSize="Title"  />
+
+        <Editor x:Name="answer" Placeholder="Answer" AutoSize="TextChanges" FontSize="Title" />
+
+
+
+                <Button Text="Next"
+                x:Name="next"
+                HorizontalOptions="Start"
+                Padding="10,30,0,0"
+                Clicked="NextClicked" />
+
+
+                 <Button Text="Check"
+                x:Name="check"
+                HorizontalOptions="Start"
+                Padding="10,30,0,0"
+                Clicked="checkClicked" />
+
+                <Button Text="Context"
+                x:Name="context"
+                HorizontalOptions="Start"
+                Padding="10,30,0,0"
+                Clicked="contextClicked" />
+
+
+        <Switch IsToggled="false" OnColor="#6324EF"
+                Toggled="activated" x:Name="trance" ThumbColor="#0EEEB7"
+                HorizontalOptions="Start" Margin="10,20,0,0" />
+
+
+           <Button Text="Back"
+                x:Name="lt"
+                HorizontalOptions="Start"
+                Padding="10,30,20,20"
+                Clicked="ltgo" />
+
+
+    </StackLayout>
+
+
+</ContentPage>

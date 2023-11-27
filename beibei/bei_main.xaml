@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="beibei.bei_main">
+     <StackLayout>
+        <Frame BackgroundColor="#AF1212" Padding="20" CornerRadius="0" HeightRequest="-1" Margin="0">
+            <Label Text="BeiBei" HorizontalTextAlignment="Start" TextColor="White" FontSize="25" VerticalTextAlignment="End" VerticalOptions="End" FontFamily="Biome"/>
+        </Frame>
+
+
+                <Button Text="HSK training"
+                StyleClass="primary"
+                x:Name="beibei"
+                BorderColor = "#151414"
+                HorizontalOptions="Start"
+                Padding="10,30,0,0"
+                Clicked="beibeigo"  FontSize="Large"/>
+
+
+                <Button Text="Source phrases"
+                StyleClass="primary"
+                BorderColor = "#191717"
+                x:Name="beifiles"
+                HorizontalOptions="Start"
+                Padding="10,30,0,0"
+                Clicked="beifilesgo" FontSize="Large" />
+
+
+         
+                <Button Text="BeiTrance"
+                StyleClass="primary"
+                BorderColor = "#191717"
+                x:Name="beitrance"
+                HorizontalOptions="Start"
+                Padding="10,30,0,0"
+                Clicked="beitrancego" FontSize="Large" />
+
+                <Button Text="Back"
+                StyleClass="primary"
+                BorderColor = "#191717"
+                x:Name="beiback"
+                HorizontalOptions="Start"
+                Padding="10,30,0,0"
+                Clicked="ltgo" FontSize="Large" />
+
+
+
+    </StackLayout>
+
+        
+</ContentPage>

@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="beibei.beifiles"
+    x:Name="popbeifiles">
+    <StackLayout>
+    <SearchBar Placeholder="Search word" TextChanged="SearchBar_TextChanged"
+               />
+
+                        <Button Text="Back"
+                x:Name="Return"
+                HorizontalOptions="Start"
+                Padding="0,0,0,0"
+                Clicked="back"   />
+    <ListView  x:Name="myListView" ItemTapped="ItemTapped">
+
+        <ListView.ItemTemplate>
+            <DataTemplate>
+
+
+
+                <TextCell Text="{Binding P1}"
+                          Detail="{Binding Py}" />
+
+            </DataTemplate>
+
+        </ListView.ItemTemplate>
+
+
+    </ListView>
+
+    </StackLayout>
+
+
+</ContentPage>
